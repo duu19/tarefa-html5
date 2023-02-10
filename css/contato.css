@@ -1,0 +1,68 @@
+.contato-bg {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    font-family: var(--fonte-primary);
+}
+
+input {
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid slateblue;
+    padding: 15px;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid slateblue;
+    border-radius: 4px;
+    width: 555px;
+}
+
+.contato-bg p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-contato {
+    color: #111;
+    background: gainsboro;
+    padding: 5px;
+    text-decoration: none;
+    border: 2px solid gainsboro;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.btn-contato:hover {
+    transition: 0.5s;
+    color: slateblue;
+}
+
+@media (max-width: 650px) {
+    input {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    textarea {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+    }
+}

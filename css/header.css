@@ -1,0 +1,11 @@
+.header-bg {
+    font-family: var(--fonte-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    width: 100%;
+    background: var(--main-color);
+    color: #fff; 
+    text-align: center;
+}

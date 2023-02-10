@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voyage Turismo</title>
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- cabeçalho promoção -->
-    <header>
+    <header class="header-bg">
         <div>
             <span><em>Aproveite nossas <strong>promoções mensais</strong> para fazer sua viagem do melhor jeito!</em></span>
         </div>
     </header>
     <!-- navbar menu -->
-    <nav>
-        <ul>
+    <nav class="navbar-bg">
+        <ul class="navbar-menu">
             <li><a href="#">Início</a></li>
             <li><a href="#paises">Países</a></li>
             <li><a href="#ofertas">Ofertas</a></li>
@@ -25,105 +29,112 @@
         </ul>
     </nav>
     <!-- conteúdo principal -->
-    <main>
-        <h1>Já fizemos tour por mais de 100 países, garantimos o melhor para você e sua família.</h1>
-        <p>Conheça mais sobre nossos serviços e benefícios inclusos.</p>
-        <img src="img/main.jpg" alt="cartões de viagem">
+    <main class="main-bg">
+        <div class="main-box-text">
+            <h1>Já fizemos tour por mais de 100 países, garantimos o melhor para você e sua família.</h1>
+            <p>Conheça mais sobre nossos serviços e benefícios inclusos.</p>
+        </div>
     </main>
     <!-- section países visitados-->
-    <section id="paises">
-        <h2>Esses são alguns dos países que visitamos frequentemente e recomendamos:</h2>
-        <div>
-            <h3>Santorini, Greece</h3>
-            <img src="img/greece.jpg" alt="Grécia">
-            <h4>Pontos turísticos:</h4>
-            <ol>
-                <li>Sítio Arqueológico de Akrotiri</li>
-                <li>Thira/Fira</li>
-                <li>Caldeira</li>
-                <li>Víniculas</li>
-                <li>Kamari</li>
-                <li>Praia Vermelha</li>
-                <li>Praia Branca e Preta</li>
-                <li>Imerovigli</li>
-                <li>Agios Georgios, Perivolos e Perissa</li>
-            </ol>
-        </div>
-
-        <div>
-            <h3>Tóquio, Japão</h3>
-            <img src="img/tokyo.jpg" alt="Tóquio">
-            <h4>Pontos turísticos:</h4>
-            <ol>
-                <li>Harajuku</li>
-                <li>Meiji Shrine</li>
-                <li>Shibuya </li>
-                <li>Akihabara</li>
-                <li>Shinjuku</li>
-                <li>Tokyo Tower</li>
-                <li>Shimokitazawa</li>
-                <li>Tokyo National Museum</li>
-                <li>Templo Senso-Ji</li>
-            </ol>
-        </div>
-
-        <div>
-            <h3>Singapura, Singapura</h3>
-            <img src="img/singapore.jpg" alt="Singapura">
-            <h4>Pontos turísticos:</h4>
-            <ol>
-                <li>Merlion Park</li>
-                <li>Garden by the Bay</li>
-                <li>Marina Bay Sands</li>
-                <li>Singapore Flyer</li>
-                <li>Clarke Quay</li>
-                <li>Bairros Étnicos</li>
-                <li>Ilha de Sentosa</li>
-            </ol>
+    <section class="paises-bg" id="paises">
+        <h2 class="tittle">Esses são alguns dos países que visitamos frequentemente e recomendamos:</h2>
+        <div class="paises-box">
+            <div class="paises">
+                <h3>Santorini, Greece</h3>
+                <img src="img/greece.jpg" alt="Grécia">
+                <h4>Pontos turísticos:</h4>
+                <ol>
+                    <li>Sítio Arqueológico de Akrotiri</li>
+                    <li>Thira/Fira</li>
+                    <li>Caldeira</li>
+                    <li>Víniculas</li>
+                    <li>Kamari</li>
+                    <li>Praia Vermelha</li>
+                    <li>Praia Branca e Preta</li>
+                    <li>Imerovigli</li>
+                    <li>Agios Georgios, Perivolos e Perissa</li>
+                </ol>
+            </div>
+            <div class="paises">
+                <h3>Tóquio, Japão</h3>
+                <img src="img/tokyo.jpg" alt="Tóquio">
+                <h4>Pontos turísticos:</h4>
+                <ol>
+                    <li>Harajuku</li>
+                    <li>Meiji Shrine</li>
+                    <li>Shibuya </li>
+                    <li>Akihabara</li>
+                    <li>Shinjuku</li>
+                    <li>Tokyo Tower</li>
+                    <li>Shimokitazawa</li>
+                    <li>Tokyo National Museum</li>
+                    <li>Templo Senso-Ji</li>
+                </ol>
+            </div>
+            <div class="paises">
+                <h3>Singapura, Singapura</h3>
+                <img src="img/singapore.jpg" alt="Singapura">
+                <h4>Pontos turísticos:</h4>
+                <ol>
+                    <li>Merlion Park</li>
+                    <li>Garden by the Bay</li>
+                    <li>Marina Bay Sands</li>
+                    <li>Singapore Flyer</li>
+                    <li>Clarke Quay</li>
+                    <li>Bairros Étnicos</li>
+                    <li>Ilha de Sentosa</li>
+                    <li>Bairros Étnicos</li>
+                    <li>Ilha de Sentosa</li>
+                </ol>
+            </div>
         </div>
     </section>
     <!-- article ofertas-->
-    <article id="ofertas">
-        <h2>Sempre oferecemos o melhor preço para sua viagem, fique de olho.</h2>
+    <article class="ofertas-bg" id="ofertas">
+        <h2 class="tittle">Sempre oferecemos o melhor preço para sua viagem, fique de olho.</h2>
         <br>
         <h3>Atuais ofertas para viagens:</h3>
         <br>
-        <div>
-            <h4>Grécia</h4>
-            <p>Viagem para Grécia em <strong>Setembro</strong>, por <strong>R$999,99</strong></p>
-            <p><a href="#ofertas">Consultar oferta</a></p>
-        </div>
-        <div>
-            <h4>Tóquio</h4>
-            <p>Viagem para Tóquio em <strong>Março</strong>, por <strong>R$999,99</strong></p>
-            <p><a href="#ofertas">Consultar oferta</a></p>
-        </div
-        <div>
-            <h4>Singapura</h4>
-            <p>Viagem para Singapura em <strong>Abril</strong>, por <strong>R$999,99</strong></p>
-            <p><a href="#ofertas">Consultar oferta</a></p>
+        <div class="ofertas-box">
+            <div class="oferta-viagem">
+                <h4><i class="bi bi-flag"></i> Grécia</h4>
+                <p><i class="bi bi-airplane-engines"></i> Viagem para Grécia em <strong>Setembro</strong>, por <strong>R$999,99</strong></p>
+                <p><a class="btn-ofertas" href="#ofertas"><i class="bi bi-arrow-right"></i> Consultar oferta</a></p>
+            </div>
+            <div class="oferta-viagem">
+                <h4><i class="bi bi-flag"></i> Tóquio</h4>
+                <p><i class="bi bi-airplane-engines"></i> Viagem para Tóquio em <strong>Março</strong>, por <strong>R$999,99</strong></p>
+                <p><a class="btn-ofertas" href="#ofertas"><i class="bi bi-arrow-right"></i> Consultar oferta</a></p>
+            </div>
+            <div class="oferta-viagem">
+                <h4><i class="bi bi-flag"></i> Singapura</h4>
+                <p><i class="bi bi-airplane-engines"></i> Viagem para Singapura em <strong>Abril</strong>, por <strong>R$999,99</strong></p>
+                <p><a class="btn-ofertas" href="#ofertas"><i class="bi bi-arrow-right"></i> Consultar oferta</a></p>
+            </div>
         </div>
         </article>
         <!-- section contato -->
-        <section id="contato">
-            <h1>Entre em contato</h1>
+        <section class="contato-bg" id="contato">
+            <h1 class="tittle">Entre em contato</h1>
             <p>Fale conosco para fazermos a melhor preparação para sua viagem com o melhor custo benefício possível.</p>
-            <form class="formulario" method="post" action="#contato">
-                <div>
-                  <input type="text" placeholder="Nome completo" required="">
-                  <input type="email" placeholder="Email" required="">
-                  <input type="text" placeholder="Assunto" required="">
-                </div>
-                <br>
-                <div>
-                    <textarea name="Mensagem" id="mensagem" cols="40" rows="10" placeholder="Mensagem"></textarea>
-                </div>
-                <br>
-                <input type="submit" value="Enviar">
-              </form>
+            <div class="form-box">
+                <form class="formulario" method="post" action="#contato">
+                    <div>
+                      <input type="text" placeholder="Nome completo" required="">
+                      <input type="email" placeholder="Email" required="">
+                      <input type="text" placeholder="Assunto" required="">
+                    </div>
+                    <br>
+                    <div>
+                        <textarea name="Mensagem" id="mensagem" cols="40" rows="10" placeholder="Mensagem"></textarea>
+                    </div>
+                    <br>
+                    <input class="btn-contato" type="submit" value="Enviar">
+                  </form>
+            </div>
         </section>
         <!-- footer -->
-        <footer>
+        <footer class="footer-bg">
             <p>Voyage Turismo ©️ 2023</p>
             <p>Desenvolvido por <a href="https://github.com/duu19" target="_blank"><strong>Eduardo Henrique</strong></a></p>
         </footer>

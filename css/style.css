@@ -1,0 +1,26 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* css */
+@import url(header.css);
+@import url(navbar-menu.css);
+@import url(main.css);
+@import url(paises.css);
+@import url(ofertas.css);
+@import url(contato.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fonte-primary: 'Ubuntu', sans-serif;
+    --main-color: slateblue;
+}

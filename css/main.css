@@ -1,0 +1,45 @@
+.main-bg {
+    height: 80vh;
+    width: 100%;
+    background: url(../img/main.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-box-text {
+    font-family: var(--fonte-primary);
+    color: #fff;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 25%;
+}
+
+.main-box-text h1 {
+    text-transform: uppercase;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.main-box-text p {
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    .main-box-text {
+        font-size: 1.5rem;
+        top: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-box-text {
+        font-size: 1.2rem;
+    }
+    .main-box-text h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+.footer-bg {
+    background: slateblue;
+    text-align: center;
+    font-family: var(--fonte-primary);
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.footer-bg a {
+    color: black;
+}
