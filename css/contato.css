@@ -43,6 +43,7 @@ textarea {
     width: 160px;
     margin: 0 auto;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .btn-contato:hover {
