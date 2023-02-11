@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .navbar-menu {
@@ -23,4 +24,10 @@
 .navbar-menu a:hover {
     transition: 0.3s;
     color: slateblue;
+}
+
+@media (max-width: 450px) {
+    .navbar-bg {
+        height: 8vh;
+    }
 }
