@@ -51,6 +51,12 @@ img {
 
 @media (max-width: 900px) {
     .paises-box {
+        gap: 30px;
         flex-wrap: wrap;
+    }
+    .paises {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: auto;
     }
 }

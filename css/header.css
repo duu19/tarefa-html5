@@ -3,9 +3,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8vh;
+    height: 6vh;
     width: 100%;
     background: var(--main-color);
     color: #fff; 
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    .header-bg {
+        height: 8vh;
+    }
 }

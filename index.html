@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voyage Turismo</title>
+    <title>Voyage Turismo &#x1F9F3;</title>
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- favicon -->
@@ -37,7 +37,7 @@
     </main>
     <!-- section países visitados-->
     <section class="paises-bg" id="paises">
-        <h2 class="tittle">Esses são alguns dos países que visitamos frequentemente e recomendamos:</h2>
+        <h2 class="tittle">Esses são alguns dos lugares que visitamos frequentemente e recomendamos:</h2>
         <div class="paises-box">
             <div class="paises">
                 <h3>Santorini, Greece</h3>
@@ -99,17 +99,17 @@
             <div class="oferta-viagem">
                 <h4><i class="bi bi-flag"></i> Grécia</h4>
                 <p><i class="bi bi-airplane-engines"></i> Viagem para Grécia em <strong>Março</strong>, por <strong>R$999,99</strong></p>
-                <p><a class="btn-ofertas" href="#ofertas"><i class="bi bi-arrow-right icon"></i> Consultar oferta</a></p>
+                <p><a class="btn-ofertas" id="ofertaLink" href="#ofertas"><i class="bi bi-arrow-right icon"></i> Consultar oferta</a></p>
             </div>
             <div class="oferta-viagem">
                 <h4><i class="bi bi-flag"></i> Tóquio</h4>
                 <p><i class="bi bi-airplane-engines"></i> Viagem para Grécia em <strong>Março</strong>, por <strong>R$999,99</strong></p>
-                <p><a class="btn-ofertas" href="#ofertas"><i class="bi bi-arrow-right icon"></i> Consultar oferta</a></p>
+                <p><a class="btn-ofertas btn-ofertas-2" id="ofertaLink" href="#ofertas"><i class="bi bi-arrow-right icon"></i> Consultar oferta</a></p>
             </div>
             <div class="oferta-viagem">
                 <h4><i class="bi bi-flag"></i> Singapura</h4>
                 <p><i class="bi bi-airplane-engines"></i> Viagem para Grécia em <strong>Março</strong>, por <strong>R$999,99</strong></p>
-                <p><a class="btn-ofertas" href="#ofertas"><i class="bi bi-arrow-right icon"></i> Consultar oferta</a></p>
+                <p><a class="btn-ofertas btn-ofertas-3" id="ofertaLink" href="#ofertas"><i class="bi bi-arrow-right icon"></i> Consultar oferta</a></p>
             </div>
         </div>
         </article>
@@ -118,18 +118,27 @@
             <h1 class="tittle">Entre em contato</h1>
             <p>Fale conosco para fazermos a melhor preparação para sua viagem com o melhor custo benefício possível.</p>
             <div class="form-box">
-                <form class="formulario" method="post" action="#contato">
-                    <div>
-                      <input type="text" placeholder="Nome completo" required="">
-                      <input type="email" placeholder="Email" required="">
-                      <input type="text" placeholder="Assunto" required="">
+                <form class="formulario" name="formContato" action="#contato">
+                    <div class="label-box">
+                      <div>
+                          <label for="Nome">Nome</label>
+                          <input id="inputContato" type="text" placeholder="Nome completo" required="" name="message">
+                      </div>
+                      <div>
+                          <label for="E-mail">E-mail</label>
+                          <input id="inputContato" type="email" placeholder="Email" required="" name="message">
+                      </div>
+                      <div>
+                          <label for="Telefone">Telefone</label>
+                          <input id="inputContato" type="tel" placeholder="Telefone" required="" name="message">
+                      </div>
                     </div>
                     <br>
                     <div>
-                        <textarea name="Mensagem" id="mensagem" cols="40" rows="10" placeholder="Mensagem"></textarea>
+                        <textarea name="Mensagem" id="inputContato" cols="40" rows="10" placeholder="Detalhe sua mensagem"></textarea>
                     </div>
                     <br>
-                    <input class="btn-contato" type="submit" value="Enviar">
+                    <button class="btn-contato" id="enviarDados" type="submit">Enviar</button>
                   </form>
             </div>
         </section>
@@ -138,5 +147,8 @@
             <p><em>Voyage Turismo ©️ 2023</em></p>
             <p>Desenvolvido por <a href="https://github.com/duu19" target="_blank"><strong>Eduardo Henrique</strong></a></p>
         </footer>
+
+
+ <script src="js/script.js"></script>       
 </body>
 </html>

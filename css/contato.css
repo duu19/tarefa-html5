@@ -5,6 +5,14 @@
     font-family: var(--fonte-primary);
 }
 
+.label-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
 input {
     height: 30px;
     border-radius: 4px;
@@ -56,7 +64,6 @@ textarea {
         display: block;
         margin: 0 auto;
         margin-top: 10px;
-        flex-wrap: wrap;
     }
 }
 
