@@ -134,11 +134,16 @@
                       </div>
                     </div>
                     <br>
+                    <div class="cep-box">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" placeholder="Digite seu CEP" required="" name="message">
+                        <span class="cep-cidade localizacao"><i class="bi bi-geo-alt"></i></span>
+                      </div>
                     <div>
                         <textarea name="Mensagem" id="inputContato" cols="40" rows="10" placeholder="Detalhe sua mensagem"></textarea>
                     </div>
                     <br>
-                    <button class="btn-contato" id="enviarDados" type="submit">Enviar</button>
+                    <button class="btn-contato" id="enviarDados" onclick="consultaCep()">Enviar</button>
                   </form>
             </div>
         </section>

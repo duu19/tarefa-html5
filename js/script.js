@@ -1,3 +1,4 @@
+// alertas
 const ofertasAlert = document.querySelector('.btn-ofertas');
 ofertasAlert.addEventListener("click", function(){
     alert("Não temos ofertas disponíveis no momento, aguarde por novidades.")
@@ -22,3 +23,28 @@ enviarDados.addEventListener("click", function(){
     }
     document.querySelector("#inputContato").value = '';
 })
+
+// ViaCEP API
+function consultaCep() {
+    let cep = document.querySelector("#cep").value;
+    if(cep.length != 8){
+      alert("CEP inválido, digite um CEP correto.");
+      return;
+}
+
+    let url = `https://viacep.com.br/ws/${cep}/json/`;
+    fetch(url).then(function(response){
+        response.json().then(function(data){
+            mostrarLocalizacao(data);
+        })
+    })
+}
+
+function mostrarLocalizacao(data){
+    let localizacao = document.querySelector(".localizacao");
+    if(data.erro){
+        localizacao.innerHTML = "CEP INVÁLIDO"
+    } else {
+        localizacao.innerHTML = data.localidade;
+    }
+}

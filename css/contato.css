@@ -23,6 +23,7 @@ input {
 textarea {
     display: block;
     margin: 0 auto;
+    margin-top: 1rem;
     padding: 15px;
     border: 2px solid slateblue;
     border-radius: 4px;
@@ -37,6 +38,19 @@ textarea {
 .form-box {
     display: flex;
     justify-content: center;
+}
+
+.cep-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.cep-cidade {
+    border: 2px solid slateblue;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .btn-contato {
@@ -60,6 +74,10 @@ textarea {
 }
 
 @media (max-width: 650px) {
+    .cep-box {
+        flex-direction: column;
+        gap: 7px;
+    }
     input {
         display: block;
         margin: 0 auto;
@@ -70,7 +88,7 @@ textarea {
 @media (max-width: 600px) {
     textarea {
         display: block;
-        margin: 0 auto;
+        
         width: 250px;
     }
 }
