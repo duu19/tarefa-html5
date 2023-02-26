@@ -10,8 +10,13 @@
 .footer-list-itens a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #e6e6e6;
+    color: #c9c6c6;
     font-size: 18px;
+}
+
+.footer-list-itens a:hover {
+    transition: 0.5s;
+    color: #fff;
 }
 
 .empresa {
@@ -63,7 +68,7 @@
 
 .footer-text-copy a:hover {
     transition: 0.5s;
-    color: #545454;
+    color: #464646;
 }
 
 @media (max-width: 500px) {
