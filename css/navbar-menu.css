@@ -18,12 +18,13 @@
 .navbar-menu a {
     font-family: var(--fonte-primary);
     text-decoration: none;
-    color: #111;
+    color: #545454;
+    font-weight: bolder;
 }
 
 .navbar-menu a:hover {
     transition: 0.3s;
-    color: slateblue;
+    color: var(--main-color);
 }
 
 @media (max-width: 450px) {

@@ -3,6 +3,8 @@
     width: 100%;
     background: #fff;
     font-family: var(--fonte-primary);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .label-box {
@@ -16,7 +18,7 @@
 input {
     height: 30px;
     border-radius: 4px;
-    border: 2px solid slateblue;
+    border: 2px solid var(--main-color);;
     padding: 15px;
 }
 
@@ -25,7 +27,7 @@ textarea {
     margin: 0 auto;
     margin-top: 1rem;
     padding: 15px;
-    border: 2px solid slateblue;
+    border: 2px solid var(--main-color);;
     border-radius: 4px;
     width: 555px;
 }
@@ -33,6 +35,8 @@ textarea {
 .contato-bg p {
     text-align: center;
     margin-bottom: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .form-box {
@@ -48,7 +52,7 @@ textarea {
 }
 
 .cep-cidade {
-    border: 2px solid slateblue;
+    border: 2px solid var(--main-color);;
     border-radius: 4px;
     padding: 5px;
 }
@@ -70,7 +74,7 @@ textarea {
 
 .btn-contato:hover {
     transition: 0.5s;
-    color: slateblue;
+    color: var(--main-color);
 }
 
 @media (max-width: 650px) {

@@ -2,6 +2,8 @@
     background: #fff;
     height: auto;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .ofertas-bg h3 {
@@ -9,6 +11,7 @@
     font-family: var(--fonte-primary);
     font-size: 1.8rem;
     text-transform: uppercase;
+    color: #545454;
 }
 
 .ofertas-box {
@@ -19,15 +22,15 @@
 }
 .oferta-viagem {
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     height: 150px;
-    width: auto;
+    width: 400px;
     font-family: var(--fonte-primary);
-    border: 2px solid slateblue;
+    border: 2px solid var(--main-color);;
     border-radius: 6px;
 }
 
@@ -52,13 +55,20 @@
 
 .btn-ofertas:hover {
     transition: 0.5s;
-    color: slateblue;
+    color: var(--main-color);;
 }
 
 @media (max-width: 900px) {
     .ofertas-box {
         flex-wrap: wrap;
         gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .oferta-viagem {
+        width: 300px;
+        height: auto;
     }
 }
 

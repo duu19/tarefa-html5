@@ -1,0 +1,49 @@
+.guia-bg {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    height: auto;
+    width: 100%;
+}
+
+.guia-text {
+    font-family: var(--fonte-primary);
+    color: var(--main-color);
+    text-align: center;
+    font-size: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.guia-text h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.guia-text p {
+    font-size: 1.5rem;
+    max-width: 70ch;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #545454;
+}
+
+@media (max-width: 500px) {
+    .guia-text h1 {
+        font-size: 2rem;
+    }
+    .guia-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .guia-text h1 {
+        font-size: 1.7rem;
+    }
+}

@@ -8,10 +8,15 @@
     font-family: var(--fonte-primary);
     text-align: center;
     padding: 30px;
-    color: slateblue;
+    color: var(--main-color);
+    font-size: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .paises-box {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     gap: 20px;
     justify-content: center;
